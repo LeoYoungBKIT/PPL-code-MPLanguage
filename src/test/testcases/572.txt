@@ -1,0 +1,17 @@
+
+        function fibo(n: integer): integer;
+            begin
+                if (n = 0) or (n = 1) then
+                    return n;
+                else
+                    return fibo(n-1) + fibo(n-2);
+            end
+
+            procedure main();
+            var x: integer;
+            begin
+                x := 28;
+                putIntLn(fibo(x));
+                putIntLn(fibo(7));
+            end
+        

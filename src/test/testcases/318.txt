@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                if (a = false or else foo(3)) then a:=true ;
+            end
+            

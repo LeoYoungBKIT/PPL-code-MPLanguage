@@ -1,0 +1,9 @@
+
+            procedure main();
+            begin
+                if a>1 then return 0;
+                else
+                    if a<1 then break;
+                    else continue;
+            end
+            

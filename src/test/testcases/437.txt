@@ -1,0 +1,11 @@
+
+        var a,x: integer;
+            b: boolean;
+            y:real;
+
+        procedure main();
+        begin
+            for x:=1 to y do a:=a+1;
+            return;
+        end
+        

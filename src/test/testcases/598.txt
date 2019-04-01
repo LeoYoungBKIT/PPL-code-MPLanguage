@@ -1,0 +1,30 @@
+
+         procedure myPutInts(a, b, c, d:integer);
+            begin
+                putInt(a);
+                putInt(b);
+                putInt(c);
+                putInt(d);
+            end
+            function x():integer;
+            begin
+                a := a + 1;
+                return a;
+            end
+            function y():integer;
+            begin
+                a := a + 2;
+                return a;
+            end
+            function z():integer;
+            begin
+                a := a + 3;
+                return a;
+            end
+            var a:integer;
+            procedure main();
+            begin
+                a := 1;
+                myPutInts(x(), y(), z(), a);
+            end
+        

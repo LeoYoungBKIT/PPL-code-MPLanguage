@@ -1,0 +1,8 @@
+
+        var a, b, c:integer;
+
+        procedure main(a,x,y,z,a:integer;b:real;c:string);
+        begin
+            return;
+        end
+        

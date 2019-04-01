@@ -1,0 +1,33 @@
+
+        var a : array [1 .. 2] of real;
+        b : array[0 .. 3] of integer;
+
+        procedure main();
+        begin
+            putFloat(intToFloat(123));
+            a[2] := a[1] := 0.001;
+            putBool(a[1]*a[2] <> 0);
+        end
+
+        function intToFloat(i : integer) : real;
+        begin
+            return i * 1.0;
+        end
+
+        function floatToInt(f : real) : integer;
+        var i, sign : integer;
+        begin
+            i := 0;
+            if f >= 0 then
+                sign := 1;
+            else
+                sign := -1;
+            f := f * sign;
+            while f >= 1 do
+            begin
+                f := f - 1;
+                i := i + 1;
+            end
+            return i * sign;
+        end
+        

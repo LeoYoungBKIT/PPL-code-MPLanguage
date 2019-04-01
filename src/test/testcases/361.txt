@@ -1,0 +1,19 @@
+
+            var a,b: integer;
+            function main(x,y:integer):integer;
+            var c: array[1 .. 3] of boolean;
+            begin
+                b:=1;
+                for i:=1 to 10 do
+                    begin
+                        while b=1 do
+                            begin
+                                if a>0 then c[1]:=tRue; else c[1]:=False;
+                                if a>1 then c[2]:=tRue; else c[2]:=False;
+                                if a>2 then c[3]:=tRue; else c[3]:=False;
+                                b:=0;
+                            end
+                    end
+            end
+
+            

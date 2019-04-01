@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main),[],VoidType(),[],[With([VarDecl(Id(a),IntType),VarDecl(Id(b),IntType)],[CallStmt(Id(print),[StringLiteral(a plus b equal: ),BinaryOp(+,Id(a),Id(b))])])])])

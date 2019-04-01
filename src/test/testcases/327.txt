@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                fOr i:=5*4 div 2 mod 2 dOWnTo 1 div 1 div 1 do for j:=0 to 9 do swap(a[i],a[j]);
+            end
+            

@@ -1,0 +1,19 @@
+
+         procedure main();
+        var a:integer;
+        begin
+            a := 2;
+            if a > 5 then
+                if a mod 2=0 then
+                    a := a * 2;
+                else
+                begin
+                end
+            else begin
+                a := 11;
+                if a mod 3 <> 0 then
+                    a := a * 3 div 2;
+            end
+            putInt(a);
+        end
+        

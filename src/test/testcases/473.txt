@@ -1,0 +1,18 @@
+
+        var a,b,c:integer;
+        procedure foo();
+        var asgmt: boolean;
+        begin
+            while asgmt do
+                begin
+                    break;
+                end
+            if asgmt then break;
+        end
+
+        procedure main();
+        begin
+            foo();
+            return;
+        end
+        

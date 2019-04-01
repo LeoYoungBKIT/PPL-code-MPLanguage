@@ -1,0 +1,11 @@
+
+        procedure main();
+        var i : integer;
+        begin
+            for i := -1 downto -4 do
+            begin
+                putInt(i);
+            end
+            putInt(i);
+        end
+        

@@ -1,0 +1,7 @@
+30.282352
+false
+true
+false
+true
+true
+true

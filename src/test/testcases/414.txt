@@ -1,0 +1,21 @@
+
+        var a, b, ppl:integer;
+
+        procedure ppl2018(asgmt3: boolean);
+        begin
+            return;
+        end
+
+        procedure ppl(asgmt2,asgmt3: boolean);
+        begin
+            ppl2018(true);
+            return;
+        end
+
+        procedure main();
+        var x,y:boolean;
+        begin
+            ppl(true,true);
+            return;
+        end
+        

@@ -1,0 +1,13 @@
+
+        var a : array [-100 .. 100] of real;
+        b : array[0 .. 3] of integer;
+        procedure main();
+        begin
+            b[0] := 0;
+            b[1] := b[0] + 1;
+            b[2] := b[1] + 1;
+            b[3] := b[2] + 1;
+            a[b[b[1]]] := b[b[0]] + 666;
+            putFloat(a[1]);
+        end
+        

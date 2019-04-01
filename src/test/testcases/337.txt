@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b:integer;
+            begin
+                call(this,(1+a)[2][3]);
+            end
+            

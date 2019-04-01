@@ -1,0 +1,8 @@
+
+        procedure main();
+        begin
+            putBool(-5.0 >= -5.);
+            putBool(1. = 1);
+            putBool(0.0 <> 0);
+        end
+		

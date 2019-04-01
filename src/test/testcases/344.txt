@@ -1,0 +1,10 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:=b:=c=2;
+                a:=b<1;
+                b:=c>5;
+                a:=b:=c<>0;
+            end
+            

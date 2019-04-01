@@ -1,0 +1,8 @@
+
+            procedure main();
+            var a,b:integer;
+            begin
+                if (a = 1) or (a = 2) AND (b = 3) then
+                print();
+            end
+            

@@ -1,0 +1,11 @@
+
+        var a:integer;
+        var b:real;
+        procedure main();
+        begin
+            a := 10;
+            b := 1.0;
+            putInt(a);
+        end
+        var c:boolean;
+        

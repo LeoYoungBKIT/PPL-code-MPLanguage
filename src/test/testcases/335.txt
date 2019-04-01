@@ -1,0 +1,10 @@
+
+            function main(x,y:integer):integer;
+            var a,b:string;
+            begin
+                open(files,"r");
+                write();
+                check("successful",1,2,foo(3,a[4]),a[2]);
+                close(open());
+            end
+            

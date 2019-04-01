@@ -1,0 +1,6 @@
+
+            PrOcEdUrE _1(A,__b,c_2:INTEGER; x,y,z:array[1 .. 3] of BOOLEAN) ;
+            var x_, _y_, z : real; m,n: INTEGER;
+            begin
+            end
+            

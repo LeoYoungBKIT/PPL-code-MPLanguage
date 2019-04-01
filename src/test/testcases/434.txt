@@ -1,0 +1,10 @@
+
+        var a: integer;
+            b: boolean;
+
+        procedure main();
+        begin
+            if 1.5 then a:=a+1;
+            return;
+        end
+        

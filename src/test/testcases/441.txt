@@ -1,0 +1,10 @@
+
+        var a: integer;
+            b: boolean;
+
+        procedure main();
+        begin
+            while "true" do a:=a+1;
+            return;
+        end
+        

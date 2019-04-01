@@ -1,0 +1,12 @@
+
+            pRoCeDUre main();
+             var a,b,c:real;
+             begin
+                write("Hello Phat");
+                (*
+                   a:=b;
+                   b:=c;
+                   c:=a;
+                *)
+             end
+            

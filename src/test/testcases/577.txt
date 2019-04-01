@@ -1,0 +1,12 @@
+
+        procedure main();
+        var i : integer;
+        a : array[0 .. 5] of integer;
+        begin
+            for i := 0 to 5 do
+                a[i] := i*100;
+            for i := a[1] downto 95 do
+                putIntLn(i);
+            putIntLn(i);
+        end
+        

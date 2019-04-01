@@ -1,0 +1,8 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:= a[2]>3*(b+c) and then (-a div 2 or else not (a or c) and b<>0) ;
+            end
+
+            

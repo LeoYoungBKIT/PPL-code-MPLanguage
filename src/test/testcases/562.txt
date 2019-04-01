@@ -1,0 +1,13 @@
+
+        procedure main();
+        var i : integer;
+        begin
+            i := 0;
+            while i mod 3 = 0 do
+            begin
+                i := i + 3;
+                if i = 99 then i := i + 1;
+            end
+            putInt(i);
+        end
+        

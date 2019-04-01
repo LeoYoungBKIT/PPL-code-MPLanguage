@@ -1,0 +1,14 @@
+
+        procedure main();
+        var a:integer;
+        begin
+            a := 4;
+            putFloatLn(foo(a));
+        end
+        function foo(a:integer):real;
+        var foo:integer;
+        begin
+            foo := 5;
+            return foo + a;
+        end
+        

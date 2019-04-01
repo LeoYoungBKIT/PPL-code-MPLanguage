@@ -1,0 +1,12 @@
+
+        var a: integer;
+            b: boolean;
+            c: real;
+
+        procedure main();
+        begin
+            c:=a;
+            a:=b;
+            return;
+        end
+        

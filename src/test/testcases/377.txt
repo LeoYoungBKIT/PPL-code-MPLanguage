@@ -1,0 +1,7 @@
+
+            function main():rEaL;
+            var _, __ : REAL; _1     : STRING;
+            begin
+                a := b := X := y := (Z+1)[0.0*3] := 1+1-2/3;
+            end
+            

@@ -1,0 +1,20 @@
+
+        var a:integer;
+            b:real;
+            c:boolean;
+            d:string;
+            e:array[1 .. 4] of integer;
+
+        function ppl(asgmt: integer): reaL;
+        begin
+            if c then return a + b; else return b;
+            asgmt:=asgmt +1;
+        end
+
+        procedure main();
+        var x: real;
+        begin
+            x:= ppl(a);
+            return;
+        end
+        

@@ -1,0 +1,14 @@
+
+        var a, b, c:integer;
+
+        procedure ppl(asgmt1,asgmt2,asgmt3: boolean;asgmt4,asgmt3:boolean);
+        begin
+            return;
+        end
+
+        procedure main();
+        begin
+            ppl(true,true,true,true,true);
+            return;
+        end
+        

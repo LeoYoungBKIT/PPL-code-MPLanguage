@@ -1,0 +1,15 @@
+
+        var a,b,c:integer;
+
+        procedure ppl(asgmt3: boolean);
+        var asgmt3: integer;
+        begin
+            return;
+        end
+
+        procedure main();
+        begin
+            ppl(true);
+            return;
+        end
+        

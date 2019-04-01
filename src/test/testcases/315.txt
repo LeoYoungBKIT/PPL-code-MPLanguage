@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                a:=b:=foo(1,2,3);
+            end
+            

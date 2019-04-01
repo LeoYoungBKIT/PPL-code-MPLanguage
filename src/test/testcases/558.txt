@@ -1,0 +1,12 @@
+
+        procedure main();
+        var i : integer;
+        begin
+            while FALSE do
+                putString("FALSE");
+            while -256 > -1 do
+            begin
+                putString("-256 > -1");
+            end
+        end
+        

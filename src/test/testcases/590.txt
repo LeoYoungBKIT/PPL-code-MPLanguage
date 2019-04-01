@@ -1,0 +1,21 @@
+
+         procedure foo(a:array [1 .. 5] of integer);
+        begin
+            with i:integer; do
+            begin
+                for i:= 1 to 5 do
+                    a[i] := i;
+            end
+        end
+
+        procedure main();
+        var arr:array [1 .. 5] of integer;
+        i:integer;
+        begin
+            for i:= 1 to 5 do
+                arr[i] := 0;
+            foo(arr);
+            for i:= 1 to 5 do
+                putInt(arr[i]);
+        end
+        

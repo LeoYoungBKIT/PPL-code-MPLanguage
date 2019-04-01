@@ -1,0 +1,14 @@
+
+            function add(x,y:integer):real ;
+            BEGIN(*Ham cong hai so *)
+                return x+y;
+            END
+
+            procedure main();
+            begin
+                write("Nhap 2 so can cong la: ");
+                read(x,y);
+                write("Ket qua cua phep cong la: ");
+                print(add(x,y));
+            end
+            

@@ -1,0 +1,10 @@
+
+        procedure main();
+        begin
+            putBool(not true);
+            putBool(not false);
+            putBool(not not true);
+            putBool(not not false);
+            putBool(not not not not (true and true));
+        end
+		

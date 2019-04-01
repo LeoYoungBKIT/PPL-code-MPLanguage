@@ -1,0 +1,16 @@
+
+        procedure foo(i:integer);
+        begin
+            if i >= 0 then
+                putStringLn("POSITIVE");
+            else
+                putStringLn("NEGATIVE");
+        end
+
+        procedure main();
+        begin
+            foo(100);
+            foo(0);
+            foo(-1);
+        end
+        

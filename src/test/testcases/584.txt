@@ -1,0 +1,10 @@
+
+        var i : integer;
+        procedure main();
+        begin
+            for i:=90 downto 0 do
+                if i mod 10 <> 0 then continue;
+                else
+                    putFloatLn(i / 10);
+        end
+        

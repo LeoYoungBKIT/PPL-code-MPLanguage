@@ -1,0 +1,9 @@
+
+            procedure main();
+            var i,a,b: integer;
+            begin
+                i:=a:=0;
+                while i<100 do
+                    write("I have done Assignment 2 PPL");
+            end
+            

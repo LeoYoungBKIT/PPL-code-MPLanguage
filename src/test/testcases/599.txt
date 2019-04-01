@@ -1,0 +1,20 @@
+
+         function x():boolean;
+            begin
+                a := a + 1;
+                return true;
+            end
+            function nx():boolean;
+            begin
+                a := a + 1;
+                return false;
+            end
+            var a:integer;
+            procedure main();
+            begin
+                a := 20;
+                putInt(a);
+                putBool(((nx() and x()) or else x() and then nx()) or (x() or else nx() and nx()));
+                putInt(a);
+            end
+        

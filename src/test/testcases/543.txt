@@ -1,0 +1,16 @@
+
+        function abs(i:integer):integer;
+        begin
+            if i >= 0 then
+                return i;
+            else
+                return -i;
+        end
+
+        procedure main();
+        begin
+            putIntLn(abs(167));
+            putIntLn(abs(-167));
+            putIntLn(abs(167)-abs(-167));
+        end
+        

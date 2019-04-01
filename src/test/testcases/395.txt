@@ -1,0 +1,55 @@
+
+            function search ( pat: string;   Text: string) : integer;
+            var
+              hpat, htext,Bm, j, m,  n: integer;
+              found : Boolean;
+            begin
+              found := False;
+              result := 0;
+              m := length(pat);
+              if m = 0 then
+              begin
+                result := 1;
+                found := true;
+              end
+
+               Bm := 1;
+               hpat := 0;
+               htext := 0;
+               n := length (Text);
+               if n >= m then
+                 {*** preprocessing ***}
+                 for j := 1 to m do
+                 begin
+                   Bm := Bm * b;
+                   hpat := hpat * b + ord (pat[j]);
+                   htext := htext * b + ord (Text[j]);
+                 end
+
+               j := m;
+               {*** search ***}
+               while not found do
+               begin
+                 if (hpat = htext) and (pat = Copy (Text, j - m + 1, m)) then
+                 begin
+                   result := j - m;
+                   found := true;
+                 end
+                 if j < n then
+                 begin
+                   j := j + 1;
+                   htext := htext * b - ord (Text[j - m]) * Bm + ord (Text[j]);
+                 end
+                 else
+                   found := true;
+               end
+             end
+
+            procedure main();
+             begin
+               writeln(Search("abcde", "0123456abcde"));
+               writeln(Search("abcde", "012345678abcde"));
+               writeln(Search("abcde", "0123456785785758"));
+               readln();
+            end
+            

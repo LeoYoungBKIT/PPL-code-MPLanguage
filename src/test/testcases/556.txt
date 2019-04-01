@@ -1,0 +1,15 @@
+
+        procedure main();
+        begin
+            a := -1000000;
+            b := 1000000;
+            // swap
+            t := a;
+            a := b;
+            b := t;
+            putIntLn(a);
+            putIntLn(b);
+        end
+
+        var a,b,t : integer;
+        

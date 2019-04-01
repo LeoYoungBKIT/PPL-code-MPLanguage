@@ -1,0 +1,21 @@
+
+            procedure ptb2() ;
+                VAR a,b,c,x1,x2,d:REAL;
+                BEGIN
+                     clrscr();
+                     while(true) do begin
+                          write("Nhap cac he so a, b, c: ");
+                          readln(a,b,c);
+                          if(a<>0) then break;
+                     end
+                     d:=sqr(b)-4*a*c;
+                     IF d<0 THEN write("Phuong trinh vo nghiem!");
+                     ELSE BEGIN
+                          x1:=(-b-sqrt(d))/(2*a);
+                          x2:=(-b+sqrt(d))/(2*a);
+                          IF d=0 THEN writeln("Phuong trinh co nghiem kep x = ",x1);
+                          ELSE writeln("Phuong trinh co 2 nghiem phan biet: ",x1,x2);
+                     END
+                     readln();
+                END
+            

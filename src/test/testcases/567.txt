@@ -1,0 +1,8 @@
+
+        procedure main();
+        var i : integer;
+        begin
+            for i := 1 to 9 do
+                putInt(i);
+        end
+        

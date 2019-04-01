@@ -1,0 +1,63 @@
+
+
+            var     f:string;
+                    u,v,c:array[1 .. 100] of integer;
+                    root:array[1 .. 100] of integer;
+                    n,m:integer;
+
+            procedure docfile();
+            var     i: inTegEr;
+            begin
+                    assign(f,fi); reset(f);
+                    readln(f,n,m);
+                    for i:=1 to m do
+                            readln(f,u[i],v[i],c[i]);
+                    close(f);
+            end
+
+            procedure swap(a,b:integer);
+            var     z:integer;
+            begin
+                    z:=a;
+                    a:=b;
+                    b:=z;
+            end
+
+            function findroot(x:integer):integer;
+            begin
+                    if root[x]<>x then
+                            root[x]:=findroot(root[x]);
+                    exit(root[x]);
+            end
+
+            procedure union(x,y:integer);
+            begin
+                    root[x]:=y;
+            end
+
+            procedure kruskal();
+            var     i,ur,uv:integer;
+                    t:integer;
+            begin
+                    for i:=1 to n do root[i]:=i;
+                    t:=0;
+                    for i:=1 to m do
+                            begin
+                                    ur:=findroot(u[i]);
+                                    uv:=findroot(v[i]);
+                                    if ur<>uv then
+                                            begin
+                                                    union(ur,uv);
+                                                    t:=t+c[i];
+                                            end
+                            end
+                    writeln(t);
+            end
+
+            procedure main();
+            begin
+                    docfile();
+                    Quicksort(1,m);
+                    kruskal();
+            end
+            

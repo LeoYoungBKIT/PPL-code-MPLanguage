@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:=1*(3+2 div 3) - 3 ;
+            end
+            

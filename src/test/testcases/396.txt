@@ -1,0 +1,122 @@
+
+            var
+
+                bad_character_shift : array[0 .. 255] of Integer;
+                good_suffix_shift : array[1 .. 100] of Integer;
+                suff : array[1 .. 100] of Integer;
+
+            //prepare bad character shift table
+            procedure pre_bad_character_shift(pattern: String);
+            var
+                i: Integer;
+                m: Integer;
+            begin
+                m := length(pattern);
+                for i := 0 to 255 do
+                    bad_character_shift[i] := m;
+
+                for i := 1 to m - 1 do
+                    bad_character_shift[pattern[i]] := m - i;
+
+            end
+
+            //prepare suff table
+            procedure pre_suff(pattern: String);
+            var
+            i, j: Integer;
+            m: Integer;
+            begin
+                m := length(pattern);
+
+                suff[m] := m;
+                for i := m - 1 downto 1 do
+                begin
+                    for j := 0 to i do
+                        if pattern[i-j] <> pattern[m-j] then
+                            break;
+                    suff[i] := j;
+                end
+
+            end
+
+
+
+          //prepare good_suffix_shift table
+            procedure pre_good_suffix_shift(pattern: String);
+            var
+                i,j: Integer;
+                m: Integer;
+            begin
+
+                m := length(pattern);
+
+                pre_suff(pattern);
+
+                for i := 1 to m do
+                good_suffix_shift[i] := m;
+
+                for i := m downto 1 do
+                    if suff[i] = i then
+                        for j := 0 to m - i do
+                            if good_suffix_shift[j] = m then
+                                good_suffix_shift[j] := m - i;
+
+                for i := 1 to m do
+                    good_suffix_shift[m - suff[i]] := m - i;
+            end
+
+            //Boyer-Moore algorithm
+            procedure BM_alg(text: String; pattern: String);
+            var
+                i, j : Integer;
+                found : Boolean;
+                m : Integer;
+                n : Integer;
+            begin
+
+                m := length(pattern);
+                n := length(text);
+
+                pre_bad_character_shift(pattern);
+                pre_good_suffix_shift(pattern);
+
+                j := 0;
+                while (j <= n - m) do
+                    begin
+                        found := true;
+                        for i := m downto 1 do
+                        if pattern[i] <> text[i + j] then
+                        begin
+                            found := false;
+                            break;
+                        end
+                        if found = true then
+                            begin
+                                write(IntToStr(j) + " ");
+                                j := j + good_suffix_shift[1];
+                            end
+                        else
+                            j := j + max(good_suffix_shift[i], bad_character_shift[text[i + j]] - m + i);
+                    end
+
+            end
+
+            procedure main();
+            var
+                pattern : String;
+                text : String;
+            begin
+
+                writeln("Podaj tekst");
+                readln(text);
+
+                writeln("Podaj wzorzec");
+                readln(pattern);
+
+                BM_alg(text, pattern);
+
+                readln();
+
+            end
+
+            

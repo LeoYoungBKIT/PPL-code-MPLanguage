@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main),[],VoidType(),[VarDecl(Id(a),FloatType)],[AssignStmt(Id(a),BinaryOp(orelse,BinaryOp(orelse,BinaryOp(andthen,BooleanLiteral(True),BooleanLiteral(False)),BooleanLiteral(True)),BinaryOp(andthen,IntLiteral(1),IntLiteral(2))))])])

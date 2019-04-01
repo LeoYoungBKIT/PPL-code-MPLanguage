@@ -1,0 +1,14 @@
+
+            function greatestCommonDivisor(a, b: integer): Integer;
+            var
+                temp: Integer;
+            begin
+              while b <> 0 do
+              begin
+                temp := b;
+                b := a mod b;
+                a := temp;
+               end
+              result := a;
+            end
+            

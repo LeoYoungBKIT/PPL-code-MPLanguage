@@ -1,0 +1,11 @@
+
+        procedure main();
+        begin
+            putBool(1-1 = 0);
+            putBool(not (1 > 2));
+            putBoolLn(1.*1 <> 1/1);
+            putBoolLn(1 div 1 <> 1*1);
+            putFloatLn(1.*1);
+            putFloatLn(1/1);
+        end
+		

@@ -1,0 +1,13 @@
+
+        var a: integer;
+            b: boolean;
+            c: real;
+            d: array[1 .. 4] of integer;
+
+        procedure main();
+        begin
+            c:=a;
+            d:=a;
+            return;
+        end
+        

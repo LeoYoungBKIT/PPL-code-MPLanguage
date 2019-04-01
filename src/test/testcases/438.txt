@@ -1,0 +1,12 @@
+
+        var a,x: integer;
+            b: boolean;
+            y:real;
+
+        procedure main();
+        begin
+            for x:=1 to 10 do
+                for  a:=1 to y do y:=y+a+x;
+            return;
+        end
+        

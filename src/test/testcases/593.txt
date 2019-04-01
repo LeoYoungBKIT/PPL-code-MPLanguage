@@ -1,0 +1,12 @@
+
+        procedure main();
+        var i,j,k,counter : integer;
+        begin
+            counter := 0;
+            for i := 9 downto 1 do
+                for j := 8 downto 1 do
+                    for k:= 7 downto 1 do
+                        counter := counter + 1;
+            putBool(counter = 7*8*9);
+        end
+        

@@ -1,0 +1,13 @@
+
+            function main(x,y:integer):integer;
+            var a,b:string;
+            begin
+                begin
+                    if m=n then read(files); else close(files);
+                    for i:=1 to 10 do begin end
+                    begin
+                    end
+                    begin end
+                end
+            end
+            

@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main),[],VoidType(),[],[For(Id(i)BinaryOp(mod,BinaryOp(div,BinaryOp(*,IntLiteral(5),IntLiteral(4)),IntLiteral(2)),IntLiteral(2)),BinaryOp(div,BinaryOp(div,IntLiteral(1),IntLiteral(1)),IntLiteral(1)),False,[For(Id(j)IntLiteral(0),IntLiteral(9),True,[CallStmt(Id(swap),[ArrayCell(Id(a),Id(i)),ArrayCell(Id(a),Id(j))])])])])])

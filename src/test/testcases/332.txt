@@ -1,0 +1,9 @@
+
+            procedure main();
+            begin
+                With a,b,c:integer; Do
+                    with d,e: string; do
+                        with f: real; do
+                            begin end
+            end
+            

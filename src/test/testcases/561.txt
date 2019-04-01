@@ -1,0 +1,14 @@
+
+        procedure main();
+        var a, b : real;
+        begin
+            a := 100;
+            b := -100;
+            while a <> b do
+            begin
+                a := -1 + a;
+                b := 1 + b;
+            end
+            putFloat(a - b);
+        end
+        

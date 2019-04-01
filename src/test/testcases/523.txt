@@ -1,0 +1,8 @@
+
+        procedure main();
+        begin
+            putFloatLn(0);
+            putBoolLn(true);
+            putBool(false);
+        end
+		

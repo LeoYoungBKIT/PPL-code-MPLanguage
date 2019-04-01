@@ -1,0 +1,20 @@
+
+         function foo(x: integer; y: string; z: real; t: boolean): integer;
+            begin
+                if t then
+                    putStringLN(y);
+                i := i + 1;
+                if i = 110 then
+                    return x;
+                else
+                    return foo(x+1, "PPL", z + 1.5, not t) + x;
+            end
+
+            var i: integer;
+
+            procedure main();
+            begin
+                i := 100;
+                putFloatLn(foo(10,"ppl",1.23,true));
+            end
+        

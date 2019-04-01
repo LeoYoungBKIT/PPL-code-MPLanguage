@@ -1,0 +1,8 @@
+
+            {comment} function foo(c: string;a:array[1 ..{comment} 4] of {comment} string){comment}:{comment}boolean {comment};{comment}
+                   var x,{comment}y:{comment} integer ;
+                   BEGIN{comment}
+                    foo(a,b,{comment}c{comment});
+                    c := a[12{comment}] ;
+                   END
+            

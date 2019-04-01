@@ -1,0 +1,25 @@
+
+        procedure main();
+        begin
+            putboolln(T());
+            putboolln(F());
+            putboolln(T() and then foo());
+            putboolln(F() and then foo());
+        end
+
+        function T():boolean;
+        begin
+            return TRUE;
+        end
+
+        function F():boolean;
+        begin
+            return FALSE;
+        end
+
+        function FOO():boolean;
+        begin
+            putString("FOO!");
+            return false;
+        end
+        

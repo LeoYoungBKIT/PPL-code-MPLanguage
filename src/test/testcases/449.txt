@@ -1,0 +1,25 @@
+
+        var a: integer;
+            b: boolean;
+            c: real;
+            d: array[1 .. 4] of integer;
+            e: string;
+
+        function foo():  array[1 .. 4] of integer;
+        begin
+            return d;
+        end
+
+        function foo1(): array[1 .. 4] of boolean;
+        begin
+            return d;
+        end
+
+        procedure main();
+        var k: array[1 .. 4] of boolean;
+        begin
+            d := foo();
+            k := foo1();
+            return;
+        end
+        

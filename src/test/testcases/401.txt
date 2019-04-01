@@ -1,0 +1,10 @@
+
+        var a, b, c: integer;
+                x,y: string;
+                a,z: array[1 .. 5] of Real;
+
+        procedure main();
+        begin
+            return;
+        end
+        

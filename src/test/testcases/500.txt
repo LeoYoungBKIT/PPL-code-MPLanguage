@@ -1,0 +1,11 @@
+
+
+var a,x: integer;
+
+procedure main();
+begin
+    a:=1;
+    with c:real; do begin c:=1; end
+    putInt(a); // 0
+end
+        

@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                for a:=foo(2,3,4) TO -10 do begin end
+            end
+            

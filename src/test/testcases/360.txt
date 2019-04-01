@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:= a*b[2] and a() and then a+2 and then a>=0 and not a ;
+            end
+            

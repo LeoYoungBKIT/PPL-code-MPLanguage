@@ -1,0 +1,8 @@
+
+        var a : integer;
+        procedure main();
+        begin
+            a := -4;
+            putBool((a/8 - 3) < 0);
+        end
+        

@@ -1,0 +1,23 @@
+
+        var a: integer;
+            b: boolean;
+            c: real;
+            d: array[1 .. 4] of integer;
+            e: string;
+
+        function foo(): real;
+        begin
+            return 1;
+        end
+
+        function foo1(): integer;
+        begin
+            return 1.0;
+        end
+
+        procedure main();
+        begin
+            c := foo() +foo1();
+            return;
+        end
+        

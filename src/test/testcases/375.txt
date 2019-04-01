@@ -1,0 +1,7 @@
+
+            procedure foo();
+            begin
+            	a[1][2][3] := -.5e3;
+            end
+
+            

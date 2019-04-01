@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:=b:=c[3] or else not 1 and then 3 or else 2;
+            end
+            

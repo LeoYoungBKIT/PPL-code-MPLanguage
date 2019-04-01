@@ -1,0 +1,1 @@
+Type Mismatch In Statement: For(Id(x)FloatLiteral(1.0),IntLiteral(10),True,[AssignStmt(Id(a),BinaryOp(+,Id(a),IntLiteral(10)))])

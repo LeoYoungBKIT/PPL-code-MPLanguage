@@ -1,0 +1,17 @@
+
+        procedure printSum(a,b,c:integer);
+        begin
+            putIntLn(a+b+c);
+            a := 0;
+            b := 0;
+            c := 0;
+        end
+
+        procedure main();
+        var a : integer;
+        begin
+            a := 1;
+            printSum(a, 6, 7);
+            putIntLn(a);
+        end
+        

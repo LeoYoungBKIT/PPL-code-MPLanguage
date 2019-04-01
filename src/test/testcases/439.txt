@@ -1,0 +1,10 @@
+
+        var a: real;
+            b: boolean;
+
+        procedure main();
+        begin
+            while a do a:=a+1;
+            return;
+        end
+        

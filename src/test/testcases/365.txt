@@ -1,0 +1,33 @@
+
+            var a, b, c: real;
+
+            var x, y, z: Boolean;
+                g, h, y: Integer;
+
+            function abc(): Real;
+            var x, y, z: Integer;
+
+           begin
+                read();
+                // comment
+                INthis := readStdin();
+                with i: integer; do
+                    begin
+                        for ID := 4 downto -3 do hi := 6;
+                        if i > 3 then return;
+                        end
+
+                return 0;
+            end
+
+            var q : integer;
+
+            function f(): Boolean;
+            begin
+            (*
+                begin
+                end
+            *)
+            end
+
+            

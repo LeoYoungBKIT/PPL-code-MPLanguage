@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                a:=b:=c[4]*3;
+            end
+            

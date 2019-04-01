@@ -1,0 +1,10 @@
+
+        var a:integer;
+            b:real;
+            frr:array[1 .. 4] of real;
+            arr:array[1 .. 5] of integer;
+        procedure main();
+        begin
+            putInt(10);
+        end
+        

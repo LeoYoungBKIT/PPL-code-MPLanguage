@@ -1,0 +1,16 @@
+
+        var a,b,c:integer;
+
+        procedure ppl(asgmt3: boolean);
+        begin
+            return;
+        end
+
+        var ppl: array[1 .. 4] of BooLean;
+
+        procedure main();
+        begin
+            ppl(true);
+            return;
+        end
+        

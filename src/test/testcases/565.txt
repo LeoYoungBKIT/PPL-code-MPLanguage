@@ -1,0 +1,23 @@
+
+        procedure main();
+        var i,j,k,counter : integer;
+        begin
+            i := counter := 0;
+            while i < 3 do
+            begin
+                j := 0;
+                while j < 4 do
+                begin
+                    k := 0;
+                    while k < 5 do
+                    begin
+                        k := k + 1;
+                        counter := counter + 1;
+                    end
+                    j := j + 1;
+                end
+                i := i + 1;
+            end
+            putInt(counter);
+        end
+        

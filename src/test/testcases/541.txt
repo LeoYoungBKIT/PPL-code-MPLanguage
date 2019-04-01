@@ -1,0 +1,7 @@
+
+        procedure main();
+        begin
+            if false then
+                putString("TRUE");
+        end
+        

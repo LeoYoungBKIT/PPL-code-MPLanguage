@@ -1,0 +1,19 @@
+
+        var globalInt:integer;
+        globalFloat:real;
+        globalBool:boolean;
+        globalArray:array [1 .. 5] of real;
+
+        procedure main();
+        var localInt:integer;
+        localFloat:real;
+        localBool:boolean;
+        localArray:array [1 .. 5] of real;
+        begin
+            globalArray[1] := localArray[2] := localFloat := globalInt := (-1*-2 + 1) mod 3;
+            putFloatLn(globalArray[1]);
+            putFloatLn(localArray[2]);
+            putFloatLn(localFloat);
+            putIntLn(globalInt);
+        end
+        

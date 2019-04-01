@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:=1*2-a[b+c mod 2];
+            end
+            

@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(add),[VarDecl(Id(x),IntType),VarDecl(Id(y),IntType)],FloatType,[],[Return(Some(BinaryOp(+,Id(x),Id(y))))]),FuncDecl(Id(main),[],VoidType(),[],[CallStmt(Id(write),[StringLiteral(Nhap 2 so can cong la: )]),CallStmt(Id(read),[Id(x),Id(y)]),CallStmt(Id(write),[StringLiteral(Ket qua cua phep cong la: )]),CallStmt(Id(print),[CallExpr(Id(add),[Id(x),Id(y)])])])])

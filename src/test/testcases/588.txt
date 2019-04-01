@@ -1,0 +1,15 @@
+
+         procedure main();
+            var x: integer; y: real; z : boolean;
+            begin
+                x := 12;
+                y := 4/5 * x / 34 - 3 + 76 /4 - -----4 * 7 -----7 ----- 7;
+                putFloatLn(y);
+                putBoolLn(y <= 5.0);
+                putBoolLn(y >= 5.0);
+                putBoolLn(y = 5);
+                putBoolLn(x >= 12.0);
+                putBoolLn(x <= 12);
+                putBoolLn(x = 12);
+            end
+        

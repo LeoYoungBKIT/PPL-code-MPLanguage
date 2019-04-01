@@ -1,0 +1,11 @@
+
+        var a : array [-100 .. 100] of real;
+        procedure main();
+        begin
+            a[99] := 1;
+            a[-99] := -1;
+            putBool(1234567 = 1234567);
+            putBool(a[99] + a[-99] = 0.0*2e10);
+            putFloat(a[99]*a[99]-a[-99]-2);
+        end
+        

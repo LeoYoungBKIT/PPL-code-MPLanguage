@@ -1,0 +1,12 @@
+
+        var a,b,c:integer;
+
+        procedure main();
+        begin
+            with x,y,z:integer;
+                x:array [1 .. 2] of integer;
+            do begin end
+
+            return;
+        end
+        

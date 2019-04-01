@@ -1,0 +1,11 @@
+
+        var a:array [-3 .. 3] of boolean;
+
+        procedure main();
+        begin
+            a[-3] := A[3] := true;
+            a[-2] := not a[-3];
+            putBool(A[-3]);
+            putBool(A[-2]);
+        end
+        

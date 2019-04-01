@@ -1,0 +1,20 @@
+
+           function foo(x: string; num: integer): string;
+            var i: integer;
+            begin
+                for i := 1 to num do
+                    putStringLn(x);
+                n := n + 1;
+                if n > 20 then
+                    return "END";
+                else
+                    return foo("PPL",5);
+            end
+
+            procedure main();
+            begin
+                n := 15;
+                putString(foo("ppl",5));
+            end
+            var n: integer;
+        

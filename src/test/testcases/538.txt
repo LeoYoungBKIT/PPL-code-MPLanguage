@@ -1,0 +1,11 @@
+
+        var INTMAX, INTMIN:integer;
+        procedure main();
+        begin
+            INTMAX := 2147483647;
+            INTMIN := INTMAX*-1-1;
+            putIntLn(INTMAX);
+            putIntLn(INTMIN);
+            putIntLn(INTMAX + INTMIN);
+        end
+        

@@ -1,0 +1,10 @@
+
+            FunCtIon a(a:inTegEr; b:StriNG; c:Array[1 .. 3] of real): array[1 .. -2] of real;
+            var x,y,z: integer;
+                    t: real;
+                  m,n: string;
+                    p: array[1 .. 4] of real;
+            begin
+
+            end
+            

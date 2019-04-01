@@ -1,0 +1,30 @@
+
+        var a, b, c:integer;
+
+        procedure ppl2018(asgmt3: boolean);
+        begin
+            return;
+        end
+
+        function ppl(asgmt2:integer;asgmt3: string): integer;
+        begin
+            ppl2018(true);
+            return asgmt2;
+        end
+
+        procedure pplwinter18(asgmt1,asgmt2: integer;asgmt4:boolean);
+        begin
+            while asgmt4 do begin asgmt2 := asgmt1 + asgmt2;  end
+            return;
+        end
+
+        procedure main();
+        var k:boolean;
+            x:integer;
+        begin
+            x:=ppl(1998,"hello ppl 2018");
+            k:=ppl2018(true);
+            pplwinter18(10,11,true);
+            return;
+        end
+        

@@ -1,0 +1,24 @@
+
+        var a: integer;
+            b: string;
+            c: real;
+            d: boolean;
+            e: array[1 .. 4] of integer;
+
+        procedure main();
+        begin
+            a:=getInt();
+            putInt(a);
+            putIntLn(a);
+            c:=getFloat();
+            putFloat(c);
+            putFloatLn(c);
+            putBool(d);
+            putBoolLn(d);
+            putString(b);
+            putStringLn(b);
+            putLn();
+
+            return 0;
+        end
+        

@@ -1,0 +1,6 @@
+
+            procedure main(a:integer; b,c: real;d:string;e:boolean);
+            var x:integer;
+            begin
+            end
+            

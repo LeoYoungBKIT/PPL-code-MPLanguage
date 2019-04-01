@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b:integer;
+            begin
+                a:= f(0,1,2) and then not 5;
+            end
+            

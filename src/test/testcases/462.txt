@@ -1,0 +1,32 @@
+
+        function ppl1(asgmt:integer):integer;
+        begin
+            return 1;
+        end
+
+        function ppl2(asgmt:real):real;
+        begin
+            return 1.0;
+        end
+
+        function ppl3(asgmt:string):string;
+        begin
+            return "bye asgmt 3";
+        end
+
+        function ppl4(asgmt:array[1 .. 4] of integer):array[1 .. 4] of integer;
+        begin
+            return asgmt;
+        end
+
+        procedure main();
+        var a:integer;
+            b:real;
+            c:boolean;
+            d:string;
+            e:array[1 .. 4] of integer;
+        begin
+            a := ppl1(e);
+            return;
+        end
+        

@@ -1,0 +1,8 @@
+
+        procedure main();
+        begin
+            if (10 > 1) then
+            begin end
+            putString("ABC");
+        end
+        

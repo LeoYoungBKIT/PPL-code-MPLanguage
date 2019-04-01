@@ -1,0 +1,9 @@
+
+        var a, b, c:integer;
+
+        procedure main();
+        begin
+            asgmt1:= a + 1;
+            return;
+        end
+        

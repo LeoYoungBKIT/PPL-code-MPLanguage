@@ -1,0 +1,6 @@
+
+            procedure foo();
+            begin
+                a := b+c {*4^2 or *pow(4,2) ?} +d;
+            end
+            

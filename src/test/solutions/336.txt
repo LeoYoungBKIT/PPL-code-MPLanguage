@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main),[VarDecl(Id(x),IntType),VarDecl(Id(y),IntType)],IntType,[VarDecl(Id(a),StringType),VarDecl(Id(b),StringType)],[CallStmt(Id(call),[CallExpr(Id(foo),[]),BinaryOp(+,Id(x),Id(y)),ArrayCell(Id(a),ArrayCell(Id(a),ArrayCell(Id(a),CallExpr(Id(a),[]))))])])])

@@ -1,0 +1,10 @@
+
+            pRoCeDUre main(a:inTegEr; b:StriNG);
+            vAr x: array[1 .. 7] of BoOLean;
+                y: array[-1 .. 7] of real;
+                z: array[1 .. -7] of string;
+                p: array[-1 .. -7] of Real;
+            beGiN
+
+            enD
+            

@@ -1,0 +1,6 @@
+
+             procedure foo();(*ten chuong trinh*)
+                begin(*chuong trinh bat dau tu day*)
+                    a := 1+2*3 div 4+5*6+7 ;(*thuc thi chuong trinh*)
+             end(*chuong trinh ket thuc o day*)
+            

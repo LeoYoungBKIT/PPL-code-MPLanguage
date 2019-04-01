@@ -1,0 +1,12 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:=c[1]=2;
+                a:=f()<1;
+                b:=foo(a,b,c)>5;
+                a:=b:=f(f(f()))<>0;
+                c:=b[b[b[2]]]<=1;
+                a:=f(a[1],h)>=-1;
+            end
+            

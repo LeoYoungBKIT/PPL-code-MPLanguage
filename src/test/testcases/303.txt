@@ -1,0 +1,5 @@
+
+            procedure main(a:integer; b: array[1 .. 3] of integer);
+            begin
+            end
+            

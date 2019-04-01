@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                if (a = false or else foo(3)) then if a>b then f:=3; else f:=2; else f:="error" ;
+            end
+            

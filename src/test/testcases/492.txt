@@ -1,0 +1,14 @@
+
+        function foo(): real;
+        begin
+            with x:real; do
+                with y:integer; do
+                    with z: integer; do
+                        return x+y+z;
+                return 1;
+        end
+
+        procedure main();
+        begin
+        end
+        

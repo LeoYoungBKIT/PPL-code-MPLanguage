@@ -1,0 +1,1 @@
+Type Mismatch In Statement: For(Id(b)IntLiteral(1),IntLiteral(10),True,[AssignStmt(Id(a),BinaryOp(+,Id(a),IntLiteral(1)))])

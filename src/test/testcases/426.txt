@@ -1,0 +1,26 @@
+
+        var a, b, c:integer;
+
+        function ppl1(asgmt2:integer;asgmt3: string): integer;
+        begin
+            return ppl2(2,"hai");
+        end
+
+        function ppl2(asgmt2:integer;asgmt3: string): integer;
+        begin
+            return ppl3(3,"ba");
+        end
+
+        function ppl3(asgmt2:integer;asgmt3: string): integer;
+        begin
+            return ppl0(0,"khong") + ppl1(1,"mot") + ppl2(2,"hai");
+        end
+
+        procedure main();
+        var k:boolean;
+            x:integer;
+        begin
+            x:=ppl1(1,"mot") + ppl2(2,"hai") + ppl3(3,"ba");
+            return;
+        end
+        

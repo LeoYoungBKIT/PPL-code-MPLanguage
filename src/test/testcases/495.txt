@@ -1,0 +1,17 @@
+
+        var a: integer;
+            b: string;
+            c: real;
+            d: boolean;
+            e: array[1 .. 4] of integer;
+
+        procedure main();
+        begin
+            println("hello");
+            println(d);
+        end
+
+        procedure println(s:string);
+        begin
+        end
+        

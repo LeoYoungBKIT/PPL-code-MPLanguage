@@ -1,0 +1,5 @@
+
+            function main(a:integer; b: array[1 .. 3] of integer): integer;
+            begin
+            end
+            

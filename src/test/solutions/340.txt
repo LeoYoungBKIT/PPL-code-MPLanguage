@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main),[VarDecl(Id(x),IntType),VarDecl(Id(y),IntType)],IntType,[VarDecl(Id(a),IntType),VarDecl(Id(b),IntType)],[Return(None),Return(Some(BinaryOp(+,BinaryOp(mod,BinaryOp(div,BinaryOp(div,IntLiteral(1),IntLiteral(1)),IntLiteral(1)),IntLiteral(1)),IntLiteral(1))))])])

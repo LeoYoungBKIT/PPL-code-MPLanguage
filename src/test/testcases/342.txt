@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b:integer;
+            begin
+                b:=a[3] or else not 6;
+            end
+            

@@ -1,0 +1,23 @@
+
+        function isPositive(i:integer):boolean;
+        begin
+            return i >= 0;
+        end
+
+        function getMaxInt():integer;
+        var i: integer;
+        begin
+            i := 0;
+            while isPositive(i) and isPositive(i + 1) do
+            begin
+                i := i + 1;
+            end
+            return i;
+        end
+
+        procedure main();
+        var i : integer;
+        begin
+            putInt(getMaxInt());
+        end
+        

@@ -1,0 +1,7 @@
+
+         procedure foo();
+                var a: boolean;
+                begin
+                  //  a := TRUE and then 1 <= (1<>0) ;
+                end
+            

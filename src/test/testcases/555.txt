@@ -1,0 +1,10 @@
+
+        procedure main();
+        begin
+            x := 37 div 5;
+            x := x := x := x;
+            putInt(x);
+        end
+
+        var x : integer;
+        

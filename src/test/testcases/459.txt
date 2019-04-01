@@ -1,0 +1,14 @@
+
+        procedure main();
+        var a:integer;
+            b:real;
+            c:boolean;
+            d:string;
+        begin
+            b := a;
+            b := a * b;
+            b := a / a;
+            a := b/a;
+            return;
+        end
+        

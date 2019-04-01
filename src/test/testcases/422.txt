@@ -1,0 +1,29 @@
+
+        var a, b, c:integer;
+
+        procedure ppl2018(asgmt3: boolean);
+        begin
+            return;
+        end
+
+        function ppl(asgmt2,asgmt3: boolean):BooLean;
+        begin
+            ppl2018(true);
+            asgmt2:=ppl(true,true);
+            return asgmt2;
+        end
+
+        procedure pplwinter18(asgmt1,asgmt2: boolean);
+        begin
+            while asgmt3 do begin asgmt2 := true;  end
+            return;
+        end
+
+        procedure main();
+        var x:boolean;
+        begin
+            x:=ppl(true,true);
+            pplwinter18(true,true);
+            return;
+        end
+        

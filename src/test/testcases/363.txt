@@ -1,0 +1,42 @@
+
+            var x,y: integer;
+
+            function addition(x,y:integer):real ;
+            BEGIN(*Ham cong hai so *)
+                return x+y;
+            END
+
+            function subtract(x,y:integer):real ;
+            BEGIN(*Ham tru hai so *)
+                return x-y;
+            END
+
+            function multiply(x,y:integer):real ;
+            BEGIN(*Ham nhan hai so *)
+                return x*y;
+            END
+
+            function division(x,y:integer):real ;
+            BEGIN(*Ham chia hai so *)
+                return x div y;
+            END
+
+            procedure main();
+            begin
+                write("Nhap 2 so can cong la: ");
+                read(x,y);
+
+                writeln("Ket qua cua phep cong la: ");
+                print(addition(x,y));
+
+                writeln("Ket qua cua phep tru la: ");
+                print(subtract(x,y));
+
+                writeln("Ket qua cua phep nhan la: ");
+                print(multiply(x,y));
+
+                writeln("Ket qua cua phep chia la: ");
+                print(division(x,y));
+
+            end
+            

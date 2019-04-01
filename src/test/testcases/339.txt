@@ -1,0 +1,9 @@
+
+            function main(x,y:integer):integer;
+            var a,b:string;
+            begin
+                coNtinue;
+                breaK;
+                return;
+            end
+            

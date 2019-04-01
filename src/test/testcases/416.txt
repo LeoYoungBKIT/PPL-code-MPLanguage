@@ -1,0 +1,8 @@
+
+        var a, b, c:integer;
+
+        procedure main(a,x,y,z:integer; b:real; c:string; a:array[1 .. 4] of BooLean);
+        begin
+            return;
+        end
+        

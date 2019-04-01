@@ -1,0 +1,9 @@
+
+        procedure main();
+        begin
+            if 10 <> 10 then
+            begin end
+            else
+                putString("10 <> 10");
+        end
+        

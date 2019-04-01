@@ -1,0 +1,8 @@
+
+            procedure main();
+            var i,a,b: integer;
+            begin
+                i:=a:=0;
+                while i<100 do while j<10 do a:=i+j;
+            end
+            

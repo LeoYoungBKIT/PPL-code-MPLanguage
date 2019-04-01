@@ -1,0 +1,22 @@
+
+        var a: integer;
+            b: string;
+            c: real;
+            d: boolean;
+            e: array[1 .. 3] of integer;
+
+        function foo(): integer;
+        var i:integer;
+        begin
+            return 1;
+        end
+
+        procedure goo();
+        begin
+        end
+
+        procedure main();
+        begin
+            a:=foo();
+        end
+        

@@ -1,0 +1,11 @@
+
+            procedure main();
+            begin
+                wiTh a,b,c:integer; do
+                    begin
+                        a:=b;
+                        b:=c;
+                        c:=a;
+                    end
+            end
+            

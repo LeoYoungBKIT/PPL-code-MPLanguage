@@ -1,0 +1,144 @@
+
+        var
+            f:string;
+            adj,adc:array[0 .. 200] of integer;
+            tmp,tmpc,head,u,v,C,heap,pos,d:array[0 .. 101] of integer;
+            dd:array[0 .. 101] of boolean;
+            n,m,k,s,t,nheap:integer;
+
+        procedure swaps(u,v:integer);
+        var     k,i,j:integer;
+        begin
+                k:=0;
+                for i:=u to v do
+                        begin
+                                inc(k);
+                                tmp[k]:=adj[i];
+                                tmpc[k]:=adc[i];
+                        end
+                for i:=u to v do
+                        begin
+                                adj[i]:=tmp[k];
+                                adc[i]:=tmpc[k];
+                                dec(K);
+                        end
+        end
+
+        procedure swap(a,b:integer);
+        var     z:integer;
+        begin
+                z:=a;
+                a:=b;
+                b:=z;
+        end
+
+        procedure upheap(i:integer);
+        begin
+                if (i div 2=0) or (d[heap[i]]>d[heap[i div 2]]) then exit();
+                swap(heap[i],heap[i div 2]);
+                swap(pos[heap[i]],pos[heap[i div 2]]);
+                upheap(i div 2);
+        end
+
+
+        procedure downheap(i:integer);
+        var     j:integer;
+        begin
+                j:=i*2;
+                if j>nHeap then exit();
+                if (j<nHeap) and (d[heap[j]]>d[heap[j+1]]) then inc(j);
+                if d[heap[i]]<=d[heap[j]] then exit();
+                swap(heap[i],heap[j]);
+                swap(pos[heap[i]],pos[heap[j]]);
+                downheap(j);
+        end
+
+        procedure push(x:integer);
+        begin
+                inc(nHeap);
+                heap[nHeap]:=x;
+                upheap(Nheap);
+        end
+
+        function pop():integer;
+        begin
+                pop:=Heap[1];
+                heap[1]:=heap[nheap];
+                dec(nheap);
+                downheap(1);
+        end
+
+        Procedure update(i:integer);
+        Begin
+                if (i=1) or (d[heap[i]]>d[heap[i div 2]]) then exit();
+                swap(heap[i],heap[i div 2]);
+                swap(pos[heap[i]],pos[heap[i div 2]]);
+                update(i div 2);
+        End
+
+        procedure docfile();
+        var     i,j:integer;
+        begin
+                assign(f,fi); reset(f);
+                read(f,n,m);
+                fillchar(head,sizeof(head),0);
+                for i:=1 to m do
+                        begin
+                                read(f,u[i],v[i],c[i]);
+                                inc(head[u[i]]);
+                                inc(head[v[i]]);
+                        end
+                for i:=1 to n+1 do
+                        head[i]:=head[i-1]+head[i];
+                for i:=1 to m do
+                        begin
+                                adj[head[u[i]]]:=v[i];
+                                adc[head[u[i]]]:=c[i];
+                                dec(head[u[i]]);
+
+                                adj[head[v[i]]]:=u[i];
+                                adc[head[v[i]]]:=c[i];
+                                dec(head[v[i]]);
+                        end
+                close(f);
+                for i:=1 to n do
+                    swaps(head[i]+1,head[i+1]);
+        end
+
+
+        procedure prim();
+        var     i,j,u,v,res:integer;
+        begin
+                for i:=1 to n do
+                        begin
+                                heap[i]:=i;
+                                pos[i]:=i;
+                                d[i]:=maxc;
+                        end
+                d[1]:=0;
+                fillchar(dd,sizeof(dd),false);
+                nHeap:=n;
+                Update(1);
+                while nheap<>0 do
+                        u:=pop;
+                        dd[u]:=true;
+                        for v:=head[u]+1 to head[u+1] do
+                                if (not dd[adj[v]]) and (d[adj[v]]>adc[v]) then
+                                        begin
+                                                d[adj[v]]:=adc[v];
+                                                upheap(pos[adj[v]]);
+                                        end
+
+                res:=0;
+                for i:=1 to n do
+                        res:=res+d[i];
+                writeln(res);
+        end
+
+        procedure main();
+        begin
+                docfile();
+                prim();
+        end
+
+            

@@ -1,0 +1,23 @@
+
+        var a:integer;
+            b:real;
+            c:boolean;
+            d:string;
+            e:array[1 .. 4] of integer;
+
+        procedure ppl(asgmt: integer);
+        begin
+            return;
+            if c then return; else return;
+            return;
+            asgmt:=asgmt;
+            return;
+        end
+
+        procedure main();
+        var x: real;
+        begin
+            ppl(a);
+            return;
+        end
+        

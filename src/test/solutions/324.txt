@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main),[],VoidType(),[],[For(Id(a)IntLiteral(1),IntLiteral(10),True,[CallStmt(Id(write),[StringLiteral(My name is Tuan Phat and you can call me Leo Young, my English name)])])])])

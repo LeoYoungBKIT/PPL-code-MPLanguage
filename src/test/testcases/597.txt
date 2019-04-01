@@ -1,0 +1,41 @@
+
+        // Ascending bubble sort
+        function sortArray(a: array [0 .. 9] of integer): array [0 .. 9] of integer;
+        var i,j,temp : integer;
+        begin
+            for i := 0 to 8 do
+                for j := 0 to 8 do
+                    if a[j] > a[j+1] then
+                    begin
+                        temp := a[j];
+                        a[j] := a[j+1];
+                        a[j+1] := temp;
+                    end
+            return a;
+        end
+
+        procedure printArray(a: array [0 .. 9] of integer);
+        var i:integer;
+        begin
+            for i:= 0 to 9 do
+                putIntLn(a[i]);
+        end
+
+        procedure main();
+        var myArray : array [0 .. 9] of integer;
+        begin
+            myArray[0] := 50;
+            myArray[1] := 70;
+            myArray[2] := 0;
+            myArray[3] := 10;
+            myArray[4] := 90;
+            myArray[5] := 60;
+            myArray[6] := 30;
+            myArray[7] := 20;
+            myArray[8] := 40;
+            myArray[9] := 80;
+
+            printArray(sortArray(myArray));
+            printArray(myArray);
+        end
+        

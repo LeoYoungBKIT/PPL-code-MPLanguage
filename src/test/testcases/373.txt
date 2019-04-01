@@ -1,0 +1,7 @@
+
+            procedure _();
+            vAr __ : STRING;
+            begin
+                foo := 1 * -2e09 div 3;
+            end
+            

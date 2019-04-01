@@ -1,0 +1,7 @@
+
+            function main(x,y:integer):integer;
+            var a,b,c:integer;
+            begin
+                a:= not c or (a and b);
+            end
+            

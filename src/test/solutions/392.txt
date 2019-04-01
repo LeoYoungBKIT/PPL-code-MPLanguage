@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(greatestCommonDivisor),[VarDecl(Id(a),IntType),VarDecl(Id(b),IntType)],IntType,[VarDecl(Id(temp),IntType)],[While(BinaryOp(<>,Id(b),IntLiteral(0)),[AssignStmt(Id(temp),Id(b)),AssignStmt(Id(b),BinaryOp(mod,Id(a),Id(b))),AssignStmt(Id(a),Id(temp))]),AssignStmt(Id(result),Id(a))])])

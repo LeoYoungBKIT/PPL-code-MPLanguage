@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                if foo(1,2,3)>b[3] then write("I have done assignment 2 PPL"); else write("I have to try more") ;
+            end
+            

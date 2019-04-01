@@ -1,0 +1,16 @@
+
+        function absFloat(i:integer):real;
+        begin
+            if i >= 0 then
+                return i*1.;
+            else
+                return -i*1.;
+        end
+
+        procedure main();
+        begin
+            putFloatLn(absFloat(167));
+            putFloatLn(absFloat(-167));
+            putFloatLn(absFloat(167)-absFloat(-167));
+        end
+        

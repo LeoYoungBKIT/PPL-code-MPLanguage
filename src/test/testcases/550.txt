@@ -1,0 +1,21 @@
+
+        var globalInt:integer;
+        globalFloat:real;
+        globalBool:boolean;
+
+        procedure main();
+        var localInt:integer;
+        localFloat:real;
+        localBool:boolean;
+        begin
+            globalInt := localInt := 0;
+            globalFloat := localFloat := 1;
+            localBool := globalBool := not not not true;
+            putIntLn(globalInt);
+            putIntLn(localInt);
+            putFloatLn(globalFloat);
+            putFloatLn(localFloat);
+            putBoolLn(localBool);
+            putBoolLn(globalBool);
+        end
+        

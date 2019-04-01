@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(main),[VarDecl(Id(x),IntType),VarDecl(Id(y),IntType)],IntType,[VarDecl(Id(a),IntType),VarDecl(Id(b),IntType),VarDecl(Id(c),IntType)],[AssignStmt(Id(a),BinaryOp(-,BinaryOp(*,IntLiteral(1),IntLiteral(2)),ArrayCell(Id(a),BinaryOp(+,Id(b),BinaryOp(mod,Id(c),IntLiteral(2))))))])])

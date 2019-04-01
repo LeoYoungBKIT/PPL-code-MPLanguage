@@ -1,0 +1,24 @@
+
+            function func(x: array [1 .. 2] of real; i,j: integer; z: real): array [1 .. 2] of real;
+            var t: integer;
+            begin
+                for t := i to j do
+                    x[t] := x[t] * 2 * z;
+                return x;
+            end
+
+            procedure print(x: array [1 .. 2] of real);
+            var i : integer;
+            begin
+                for i := 1 to 2 do
+                    putFloatLn(x[i]);
+            end
+
+            procedure main();
+            var x: array [1 .. 2] of real; i : integer;
+            begin
+                for i := 1 to 2 do
+                    x[i] := i;
+                print(func(func(x,1,2,3),1,2,-1));
+            end
+        

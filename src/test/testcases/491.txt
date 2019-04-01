@@ -1,0 +1,13 @@
+
+        procedure main();
+        begin
+            with x:real; do
+                with y:integer; do
+                begin
+                    x:=1.5;
+                    y:=1;
+                end
+
+            x:=1;
+        end
+        

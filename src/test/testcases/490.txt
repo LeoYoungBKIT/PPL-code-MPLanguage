@@ -1,0 +1,8 @@
+
+        procedure main();
+        begin
+            with x:real; do
+                with x:integer; do
+                    x:=1.0;
+        end
+        

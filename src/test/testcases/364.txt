@@ -1,0 +1,24 @@
+
+            procedure swap(a,b:integer);
+            var t: integer;
+            begin
+                t:=b;
+                b:=a;
+                a:=t;
+            end
+
+            function max(x: array[1 .. 100] of integer):inTegEr;
+            var num: integer;
+            begin
+                num:=x[1];
+                for i:=1 to length(x) do
+                    if x[i]>num then num:=x[i];
+
+                return num;
+            end
+
+            procedure main();
+            begin
+            end
+
+            

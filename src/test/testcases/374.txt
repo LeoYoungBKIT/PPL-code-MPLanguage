@@ -1,0 +1,11 @@
+
+            function foo (x:boolean):boolean;
+            begin
+            if a = 1 then
+                begin
+                    x := y := .1e2;
+                    foo(True AND then false);
+                end
+            end
+
+            

@@ -1,0 +1,25 @@
+
+        procedure foo();
+        var a:integer;
+        begin
+            while true do
+            begin
+                if 1>2 then
+                    break;
+                else
+                    return;
+                a:=1;
+            end
+        end
+
+        procedure main();
+        var a:integer;
+            b:real;
+            c:boolean;
+            d:string;
+            e:array[1 .. 4] of integer;
+        begin
+            foo();
+            return;
+        end
+        

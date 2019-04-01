@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                for a:=1 to 10 do write("My name is Tuan Phat and you can call me Leo Young, my English name");
+            end
+            

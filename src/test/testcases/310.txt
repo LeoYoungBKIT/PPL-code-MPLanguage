@@ -1,0 +1,12 @@
+
+            var x,y,z: integer;
+                    t: real;
+                  m,n: string;
+                    p: array[1 .. 4] of boolean;
+            procedure main();
+            begin
+            end
+            function add(x,y:integer): integer;
+            begin
+            end
+            

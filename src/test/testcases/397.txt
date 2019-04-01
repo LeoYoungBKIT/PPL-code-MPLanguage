@@ -1,0 +1,39 @@
+
+            var
+                m,n,i,j,t:Integer;
+                wzorzec:String;
+                tekst:String;
+                P: array[1 .. 100] of Integer;
+
+            procedure main();
+            begin
+                writeln("Podaj tekst");
+                readln(tekst);
+                writeln("Podaj wzorzec");
+                readln(wzorzec);
+                n:=length(tekst);
+                m:=length(wzorzec);
+                SetLength(P,m+1);
+
+
+                P[0]:=0; P[1]:=0; t:=0;
+                for j:=2 to m do
+                    begin
+                        while (t>0) and (wzorzec[t+1]<>wzorzec[j]) do t:=P[t];
+                        if wzorzec[t+1]=wzorzec[j] then t:=t+1;
+                        P[j]:=t;
+                    end
+
+                //Algorithm KMP
+                writeln("Indeksy poczatkow wzorca w tekscie");
+                i:=1; j:=0;
+                while i<=n-m+1 do
+                    begin
+                        j:=P[j];
+                        while ((j<m)and(wzorzec[j+1]=tekst[i+j])) do j:=j+1;
+                        if j=m then writeln((IntToStr(i)));
+                        i:=i+max(1,j-P[j]);
+                    end
+                readln();
+            end
+            

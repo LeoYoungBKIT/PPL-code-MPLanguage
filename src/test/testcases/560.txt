@@ -1,0 +1,12 @@
+
+        procedure main();
+        var b : BOOLEAN;
+        begin
+            b := true;
+            while B do
+            begin
+                b := not b;
+                putBool(b);
+            end
+        end
+        

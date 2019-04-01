@@ -1,0 +1,30 @@
+
+        procedure ppl1(asgmt:integer);
+        begin
+            asgmt:=asgmt + 1;
+        end
+
+        procedure ppl2(asgmt:integer);
+        begin
+            asgmt:=asgmt*2;
+        end
+
+        function ppl3(asgmt1,asgmt2:integer):integer;
+        begin
+            asgmt1:=asgmt1*2;
+            asgmt2:=asgmt2*2;
+            return asgmt1 + asgmt2;
+        end
+
+        procedure main();
+        var a:integer;
+            b:real;
+            c:boolean;
+            d:string;
+            e:array[1 .. 4] of integer;
+        begin
+            a := ppl3(10,11);
+            ppl1(a);
+            return;
+        end
+        

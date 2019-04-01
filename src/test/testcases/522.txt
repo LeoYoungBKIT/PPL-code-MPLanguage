@@ -1,0 +1,14 @@
+
+        procedure main();
+        var x,y,z:integer;
+        f,r:real;
+        begin
+            x := 1;
+            y := 2;
+            z := -5;
+            f := x + y;
+            r := f/2;
+            putIntLn(x+y-z*3);
+            putFloat(f*r*x);
+        end
+		

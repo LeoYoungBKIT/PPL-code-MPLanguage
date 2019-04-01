@@ -1,0 +1,26 @@
+
+          var x,y: integer;
+
+            function foo1(): boolean;
+            begin
+                x := 10;
+                return true;
+            end
+
+            function foo2(): boolean;
+            begin
+                y := 10;
+                return true;
+            end
+
+            procedure main();
+            var i: integer;
+            begin
+                x := 5;
+                y := 5;
+                putBoolLn((1+1 = 2) or else foo1());
+                putBoolLn((1+1 = 2) or foo2());
+                putIntLn(x);
+                putIntLn(y);
+            end
+        

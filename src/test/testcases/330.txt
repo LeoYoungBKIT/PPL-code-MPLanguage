@@ -1,0 +1,6 @@
+
+            procedure main();
+            begin
+                witH a,b:integer; c,d: array[-1 .. -3] of real; do begin end
+            end
+            

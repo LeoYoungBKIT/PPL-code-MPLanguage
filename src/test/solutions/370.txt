@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(foo),[VarDecl(Id(c),StringType),VarDecl(Id(a),ArrayType(1,4,StringType))],BoolType,[VarDecl(Id(x),IntType),VarDecl(Id(y),IntType)],[CallStmt(Id(foo),[Id(a),Id(b),Id(c)]),AssignStmt(Id(c),ArrayCell(Id(a),IntLiteral(12)))])])

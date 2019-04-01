@@ -1,0 +1,10 @@
+
+        var a:array [-3 .. 3] of integer;
+
+        procedure main();
+        begin
+            a[0] := 1 * (2 + (3 * 4 + (5 - 10 div (2 + 3))));
+            a[1] := -2 * - a[0] * 3;
+            putInt(a[1]);
+        end
+        

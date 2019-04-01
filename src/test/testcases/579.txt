@@ -1,0 +1,34 @@
+
+         function foo1(n: integer): integer;
+            begin
+                if (n = 0) then
+                    return 0;
+                putIntLn(n);
+                return foo2(n-1);
+            end
+
+            function foo2(n: integer): integer;
+            begin
+                if (n = 0) then
+                    return 0;
+                putIntLn(n);
+                return foo3(n-1);
+            end
+
+            function foo3(n: integer): integer;
+            begin
+                if (n = 0) then
+                    return 0;
+                putIntLn(n);
+                return foo1(n-1);
+            end
+
+            var n: integer;
+
+            procedure main();
+            var x: integer;
+            begin
+                n := 10;
+                x := foo1(n);
+            end
+        

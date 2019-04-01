@@ -1,0 +1,9 @@
+
+        var i:integer;
+        procedure main();
+        begin
+            for i:=9 downto 5 do
+                if i mod 3 = 0 then
+                    putfloatln(i div 3);
+        end
+        
